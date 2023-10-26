@@ -1,0 +1,103 @@
+:root {
+    /* font-size */
+    --fs-xs: 14px;
+    --fs-s: 18px;
+    --fs-sm: 16px;
+    --fs-md: 32px;
+    --fs-lg: 28px;
+    --fs-xl: 32px;
+    /* colors */
+    --bs-white: #fff;
+    --bg-skin: #fff9e4;
+    --bs-black: #3c3c3c;
+    --bg-black: #242323;
+    --bs-yellow: #ffcf23;
+    --bs-offwhite: #fafafa;
+    --bg-darkblack: #242323;
+    --bg-lightskin: #fffcf6;
+    /* font-family */
+    --ff-montserrsat: 'Montserrat Alternates';
+    --ff-raleway: 'Raleway';
+}
+
+/* ==============font-size=========== */
+.fs-16 {
+    font-size: var(--fs-sm);
+}
+
+.fs-20 {
+    font-size: var(--fs-xxl);
+}
+
+.fs-24 {
+    font-size: var(--fs-xl);
+}
+
+.fs-42 {
+    font-size: var(--fs-lg);
+}
+
+.fs-62 {
+    font-size: var(--fs-md);
+}
+
+.fs-44 {
+    font-size: var(--fs-2xl);
+}
+
+/* =======font-family===== */
+.ff-montserrsat {
+    font-family: var(--ff-montserrsat);
+}
+
+.ff-raleway {
+    font-family: var(--ff-raleway);
+}
+
+/* ======colors==== */
+.bs-white {
+    color: var(--bs-white);
+}
+
+.bg-skin {
+    background-color: var(--bg-skin);
+}
+
+.bs-black {
+    color: var(--bs-black);
+}
+
+.bs-yellow {
+    color: var(--bs-yellow);
+}
+
+.bs-offwhite {
+    color: var(--bs-offwhite);
+}
+
+.bg-darkblack {
+    background-color: var(--bg-darkblack);
+}
+
+.bg-lightskin {
+    background-color: var(--bg-lightskin);
+}
+
+.bg-pink {
+    background-color: var(--color-pink);
+}
+
+.lh-150 {
+    line-height: 150%;
+}
+
+@media (min-width:768px) {
+    :root {
+        --fs-sm: 16px;
+        --fs-md: 62px;
+        --fs-lg: 42px;
+        --fs-xl: 24px;
+        --fs-xxl: 20px;
+        --fs-2xl: 44px;
+    }
+}
