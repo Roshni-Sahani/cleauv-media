@@ -24,34 +24,37 @@
         <img src="./assets/images/png/logo.png" alt="logo">
     </div>
     <header>
-        <nav class="nav-shadow py-2">
-            <div class="my-container">
-                <div class="d-flex gap-5 align-items-center justify-content-between">
+        <nav class="py-3 nav-shadow">
+            <div class="my-container ">
+                <div class="d-flex justify-content-between align-items-center">
                     <img src="./assets/images/png/logo.png" alt="logo">
                     <div>
-                        <ul class="gap-3 mb-0 d-flex  gap-5 mobile_view justify-content-lg-end justify-content-center align-items-center pl-0"
+                        <ul class="d-flex align-items-center  justify-content-center gap-4 mb-0 mobile_view ps-0"
                             id="navbar">
-                            <li class="d-block d-lg-none"><img src="./assets/images/png/logo.png" alt="logo"></li>
-                            <li onclick="openNav()" class="border1"><a href=""
-                                    class="bs-white fs-16 lh-150 fw-normal ff-segoe">Home</a>
+                            <li class="d-block  d-lg-none pt-lg-0 pt-5">
+                                <img src="./assets/images/png/logo.png" alt="logo">
                             </li>
-                            <li onclick="openNav()" class="border1"><a href=""
-                                    class="bs-white fs-16 lh-150 fw-normal">About
-                                </a></li>
-                            <li onclick="openNav()" class="border2"><a href=""
-                                    class="bs-white fs-16 lh-150 fw-normal">Services</a>
+                            <li class="pt-3 border1 pt-lg-0 "><a href="#home" onclick="openNav()"
+                                    class="list-unstyled text-decoration-none  fs-16 fw-normal bs-offwhite lh-150 ff-montserrsat nav-line position-relative ">Home</a>
                             </li>
-                            <li onclick="openNav()" class="border3"><a href=""
-                                    class="bs-white fs-16 lh-150 fw-normal">Pricing
-                                </a></li>
-                            <li onclick="openNav()" class="border4"><a href=""
-                                    class="bs-white fs-16 lh-150 fw-normal">FAQ</a>
+                            <li class="pt-3 border1 pt-lg-0"><a href="#footer" onclick="openNav()"
+                                    class="list-unstyled text-decoration-none fs-16 fw-normal bs-offwhite lh-150 ff-montserrsat nav-line position-relative ">About</a>
                             </li>
-                            <div>
-                                <button class="login-btn ff-montserrsat fs-16 fw-semibold bs-offwhite">Login</button>
-                            </div>
+                            <li class="pt-3 border2 pt-lg-0"><a href="#service" onclick="openNav()"
+                                    class="list-unstyled text-decoration-none fs-16 fw-normal bs-offwhite lh-150 ff-montserrsat position-relative ">Services</a>
+                            </li>
+                            <li class="pt-3 border3 pt-lg-0"><a href="#pricing" onclick="openNav()"
+                                    class="list-unstyled text-decoration-none fs-16 fw-normal bs-offwhite lh-150 ff-montserrsat nav-line position-relative">Pricing</a>
+                            </li>
+                            <li class="pt-3 border4 pt-lg-0"><a href="#accordian" onclick="openNav()"
+                                    class="list-unstyled text-decoration-none fs-16 fw-normal bs-offwhite lh-150 ff-montserrsat nav-line position-relative ">FAQ</a>
+                            </li>
+                            <li class="pt-3 pt-lg-0"><button
+                                    class="ml-lg-89 ml-0 login-btn bs-offwhite ff-montserrsat fs-16 fw-semibold">Login</button>
+                            </li>
+
                         </ul>
-                        <div id="menubtn-icon" onclick="openNav()" class="pe-2 pt-2 position-relative z-index-4">
+                        <div id="menubtn-icon" onclick="openNav()" class="  pe-3 pt-1 position-relative z-index-4">
                             <div class="line1"></div>
                             <div class="line2 my-2"></div>
                             <div class="line3"></div>
@@ -81,15 +84,18 @@
             </div>
             <div class="ellipse1">
                 <img src="./assets/images/png/elli1.png" alt="elli1" class="w-lg-50">
+
             </div>
             <div class="orange-img">
                 <img src="./assets/images/png/orange-img.png" alt="orange-img" class="w-lg-50">
             </div>
             <div class="yellow-img">
-                <img src="./assets/images/png/yellow-img.png" alt="yellow-img" class="w-lg-50">
+                <img src="./assets/images/png/yellow-img.png" alt="yellow-img" class="d-none d-lg-block">
+                <img src="./assets/images/png/small-yellow-img.png" alt="yellow-img" class="d-block d-lg-none">
             </div>
             <div class="green-img">
-                <img src="./assets/images/png/greem-img.png" alt="green-img" class="w-lg-50">
+                <img src="./assets/images/png/greem-img.png" alt="green-img" class="d-none d-lg-block">
+                <img src="./assets/images/png/small-triangle.png" alt="small-triangle" class="d-block d-lg-none">
             </div>
         </section>
     </header>
@@ -142,7 +148,7 @@
         </div>
     </section>
     <!-- ====================section4============================ -->
-    <section class="bg-darkblack py-5 position-relative z-1">
+    <section class="bg-darkblack py-5 position-relative z-1 overflow-hidden">
         <div class="my-container">
             <div class="d-flex align-items-center justify-content-center">
                 <p class="bs-offwhite ff-montserrsat fs-42 fw-semibold">Services</p>
@@ -152,82 +158,89 @@
             <div class="row justify-content-center flex-wrap">
                 <div class="col-lg-4 col-md-6 d-flex justify-content-center flex-column">
                     <div class="box1 mb-4">
-                        <p class="ff-montserrsat fs-24 bs-offwhite ">Trade show banners</p>
+                        <p class="ff-montserrsat fs-24 bs-offwhite  text-center text-md-start text-nowrap">Trade show
+                            banners</p>
                     </div>
                     <div class="box1 mb-4">
-                        <p class="ff-montserrsat fs-24 bs-offwhite">Logos & branding</p>
+                        <p class="ff-montserrsat fs-24 bs-offwhite text-center text-md-start">Logos & branding</p>
                     </div>
                     <div class="box1 mb-4">
-                        <p class="ff-montserrsat fs-24 bs-offwhite ">Email graphics</p>
+                        <p class="ff-montserrsat fs-24 bs-offwhite  text-center text-md-start">Email graphics</p>
                     </div>
                     <div class="box1 mb-4">
-                        <p class="ff-montserrsat fs-24 bs-offwhite ">Packaging</p>
+                        <p class="ff-montserrsat fs-24 bs-offwhite  text-center text-md-start">Packaging</p>
                     </div>
                     <div class="box1 mb-4">
-                        <p class="ff-ma fs-24 bs-offwhite text-nowrap">Social media graphics</p>
+                        <p class="ff-ma fs-24 bs-offwhite text-nowrap text-center text-md-start">Social media graphics
+                        </p>
                     </div>
                     <div class="box1 mb-4">
-                        <p class="ff-montserrsat fs-24 bs-offwhite">Pitch decks</p>
+                        <p class="ff-montserrsat fs-24 bs-offwhite text-center text-md-start">Pitch decks</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6  d-flex justify-content-center flex-column">
                     <div class="box2 mb-4">
-                        <p class="ff-montserrsat fs-24 bs-offwhite">Website</p>
+                        <p class="ff-montserrsat fs-24 bs-offwhite text-center text-md-start">Website</p>
                     </div>
                     <div class="box2 mb-4">
-                        <p class="ff-montserrsat fs-24 bs-offwhite">Infographics</p>
+                        <p class="ff-montserrsat fs-24 bs-offwhite text-center text-md-start">Infographics</p>
                     </div>
                     <div class="box2 mb-4">
-                        <p class="ff-montserrsat fs-24 bs-offwhite ">Direct mail</p>
+                        <p class="ff-montserrsat fs-24 bs-offwhite  text-center text-md-start">Direct mail</p>
                     </div>
                     <div class="box2 mb-4">
-                        <p class="ff-montserrsat fs-24 bs-offwhite">Wireframes</p>
+                        <p class="ff-montserrsat fs-24 bs-offwhite text-center text-md-start">Wireframes</p>
                     </div>
                     <div class="box2 mb-4">
-                        <p class="ff-montserrsat fs-24 bs-offwhite text-nowrap">Blog graphics</p>
+                        <p class="ff-montserrsat fs-24 bs-offwhite text-nowrap text-center text-md-start">Blog graphics
+                        </p>
                     </div>
                     <div class="box2 mb-4">
-                        <p class="ff-montserrsat fs-24 bs-offwhite ">Digital ads</p>
+                        <p class="ff-montserrsat fs-24 bs-offwhite  text-center text-md-start">Digital ads</p>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-6  d-flex justify-content-center flex-column">
                     <div class="box3 mb-4">
-                        <p class="ff-montserrsat fs-24 bs-offwhite text-nowrap">Slide decks</p>
+                        <p class="ff-montserrsat fs-24 bs-offwhite text-nowrap text-center text-md-start">Slide decks
+                        </p>
                     </div>
                     <div class="box3 mb-4">
-                        <p class="ff-montserrsat fs-24 bs-offwhite">Resumes</p>
+                        <p class="ff-montserrsat fs-24 bs-offwhite text-center text-md-start">Resumes</p>
                     </div>
                     <div class="box3 mb-4">
-                        <p class="ff-montserrsat fs-24 bs-offwhite">Brochures</p>
+                        <p class="ff-montserrsat fs-24 bs-offwhite text-center text-md-start">Brochures</p>
                     </div>
                     <div class="box3 mb-4">
-                        <p class="ff-montserrsat fs-24 bs-offwhite">Signage</p>
+                        <p class="ff-montserrsat fs-24 bs-offwhite text-center text-md-start">Signage</p>
                     </div>
                     <div class="box3 mb-4">
-                        <p class="ff-montserrsat fs-24 bs-offwhite">Stationery</p>
+                        <p class="ff-montserrsat fs-24 bs-offwhite text-center text-md-start">Stationery</p>
                     </div>
                     <div class="box3 mb-4">
-                        <p class="ff-montserrsat fs-24 bs-offwhite">Billboards</p>
+                        <p class="ff-montserrsat fs-24 bs-offwhite text-center text-md-start">Billboards</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6  d-flex justify-content-center flex-column">
                     <div class="box4 mb-4">
-                        <p class="ff-montserrsat fs-24 bs-offwhite">Mobile apps</p>
+                        <p class="ff-montserrsat fs-24 bs-offwhite text-center text-md-start">Mobile apps</p>
                     </div>
                     <div class="box4 mb-4">
-                        <p class="ff-montserrsat fs-24 bs-offwhite text-nowrap">Design systems</p>
+                        <p class="ff-montserrsat fs-24 bs-offwhite text-nowrap text-center text-md-start">Design systems
+                        </p>
                     </div>
                     <div class="box4 mb-4">
-                        <p class="ff-montserrsat fs-24 bs-offwhite text-nowrap">Business cards</p>
+                        <p class="ff-montserrsat fs-24 bs-offwhite text-nowrap text-center text-md-start">Business cards
+                        </p>
                     </div>
                     <div class="box4 mb-4">
-                        <p class="ff-montserrsat fs-24 bs-offwhite text-nowrap">SAAS</p>
+                        <p class="ff-montserrsat fs-24 bs-offwhite text-nowrap text-center text-md-start">SAAS</p>
                     </div>
                     <div class="box4 mb-4">
-                        <p class="ff-montserrsat fs-24 bs-offwhite text-nowrap">Brand guides</p>
+                        <p class="ff-montserrsat fs-24 bs-offwhite text-nowrap text-center text-md-start">Brand guides
+                        </p>
                     </div>
                     <div class="box4 mb-4">
-                        <p class="ff-montserrsat fs-24 bs-offwhite">Icons</p>
+                        <p class="ff-montserrsat fs-24 bs-offwhite text-center text-md-start">Icons</p>
                     </div>
                 </div>
             </div>
@@ -252,7 +265,7 @@
         </div>
     </section>
     <!-- ====================section5============================ -->
-    <section class="bg-skin py-5 position-relative">
+    <section class="bg-skin py-5 position-relative overflow-hidden">
         <div class="my-container">
             <p class="fs-42 fw-semibold ff-montserrsat bs-black text-center">Pricing Plans </p>
             <p class="bs-black fs-16 ff-montserrsat lh-150 fw-normal text-center opacity-0-9 pb-4">We offer flexible and
@@ -446,21 +459,23 @@
         </div>
     </section>
     <!-- ====================section6============================ -->
-    <section class="bg-dark py-5 position-relative">
+    <section class="bg-dark py-5 position-relative overflow-hidden">
         <div class="my-container">
             <div class="d-flex align-items-center justify-content-center flex-column pt-4">
                 <button class="fs-20 ff-raleway fw-semibold add-btn bs-white">Add On</button>
-                <p class="bs-offwhite ff-montserrsat fw-semibold fs-42 pt-3">Webflow development</p>
+                <p class="bs-offwhite ff-montserrsat fw-semibold fs-42 pt-3 text-center">Webflow development</p>
                 <p class="bs-offwhite fs-16 opacity-0-9 ff-montserrsat lh-150 fw-normal mx-auto text-center">Get a
                     better website faster
                     with Webflow development. Requires a design subscription.</p>
                 <p class="bs-yellow fs-42 ff-montserrsat fw-semibold">$999/m</p>
             </div>
-            <div class="triangle-img d-none d-lg-block">
-                <img src="./assets/images/png/triangle.png" alt="triangle">
+            <div class="triangle-img">
+                <img src="./assets/images/png/triangle.png" alt="triangle" class="d-none d-lg-block">
+                <img src="./assets/images/png/Isolation_Mode.png" alt="mode" class="d-block d-lg-none">
             </div>
-            <div class="game-img d-none d-lg-block">
-                <img src="./assets/images/png/game.png" alt="game">
+            <div class="game-img">
+                <img src="./assets/images/png/game.png" alt="game" class="d-none d-lg-block">
+                <img src="./assets/images/png/blob-img.png" alt="blob-img" class="d-block d-lg-none">
             </div>
             <div class="pos-abs d-none d-lg-block">
                 <img src="./assets/images/png/ellipse1.png" alt="1">
@@ -498,7 +513,7 @@
             <div class="slider-card">
                 <div class="row">
                     <div class="col-3">
-                        <img src="./assets/images/png/slider-girl2.png" alt="2">
+                        <img src="./assets/images/png/slider-girl-3.png" alt="3">
                     </div>
                     <div class="col-lg-9 pl-44">
                         <h2 class="ff-Montserrat color-lightblack fw-semibold fs-sm pt-2 mb-0">Arlene McCoy</h2>
@@ -534,7 +549,7 @@
             <div class="slider-card">
                 <div class="row">
                     <div class="col-3">
-                        <img src="./assets/images/png/slider-girl2.png" alt="2">
+                    <img src="./assets/images/png/slider-girl-3.png" alt="3">
                     </div>
                     <div class="col-lg-9 pl-44">
                         <h2 class="ff-Montserrat color-lightblack fw-semibold fs-sm pt-2 mb-0">Arlene McCoy</h2>
@@ -647,7 +662,7 @@
                         <button
                             class="accordion-button collapsed toggle example fs-20 fw-semibold ff-montserrsat bs-black"
                             type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive"
-                            aria-expanded="false" aria-controls="flush-collapseThree">
+                            aria-expanded="false" aria-controls="flush-collapseFive">
                             Q5. How do I get started with your services?
                         </button>
                     </h2>
@@ -668,12 +683,12 @@
                     <h2 class="accordion-header">
                         <button
                             class="accordion-button collapsed toggle example fs-20 fw-semibold ff-montserrsat bs-black"
-                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive"
-                            aria-expanded="false" aria-controls="flush-collapseThree">
+                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsesix"
+                            aria-expanded="false" aria-controls="flush-collapsesix">
                             Q6. How does your business model work?
                         </button>
                     </h2>
-                    <div id="flush-collapseFive"
+                    <div id="flush-collapsesix"
                         class="accordion-collapse collapse bs-black ff-montserrsat fs-16 fw-normal lh-150"
                         data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body example">At Cleauv Media Inc, we pride ourselves on our holistic
@@ -699,14 +714,14 @@
     <footer class="bg-black">
         <div class="my-container">
             <div class="row py-5">
-                <div class="col-lg-6">
+                <div class="col-md-6">
                     <img src="./assets/images/png/footer-img.png" alt="footer-img">
                     <p class="bs-offwhite ff-montserrsat fs-16 lh-150 opacity-0-7 max-width-401 pt-4">Ut ut at mus
                         facilisi
                         semper at suscipit massa purus. Varius sed sollicitudin id aliquam hac
                         tortor maecenas purus
                         semper.</p>
-                    <div class="d-flex gap-3">
+                    <div class="d-flex gap-3 pb-3">
                         <a href="https://twitter.com/login" target="_blank">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -736,9 +751,9 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-md-6">
                     <div class="row">
-                        <div class="col-lg-4 col-sm-4">
+                        <div class="col-md-4 col-6">
                             <ul>
                                 <li class="pb-3"><a href=""
                                         class="bs-offwhite fs-16 ff-montserrsat lh-150 fw-normal op-7 pt-4">Quick
@@ -756,7 +771,7 @@
                                         class="bs-offwhite fs-16 ff-montserrsat lh-150 fw-normal op-7">FAQ</a></li>
                             </ul>
                         </div>
-                        <div class="col-lg-4 col-sm-4">
+                        <div class="col-md-3 col-6">
                             <ul>
                                 <li class="pb-3"><a href=""
                                         class="bs-offwhite fs-16 ff-montserrsat lh-150 fw-normal op-7">Company</a></li>
@@ -768,7 +783,7 @@
                                         class="bs-offwhite fs-16 ff-montserrsat lh-150 fw-normal op-7">Legal</a></li>
                             </ul>
                         </div>
-                        <div class="col-lg-4 col-sm-4">
+                        <div class="col-md-5">
                             <ul>
                                 <li class="pb-3"><a href=""
                                         class="bs-offwhite fs-16 ff-montserrsat lh-150 fw-normal">Contact us</a></li>

@@ -1,11 +1,11 @@
 :root {
     /* font-size */
-    --fs-xs: 14px;
-    --fs-s: 18px;
     --fs-sm: 16px;
-    --fs-md: 32px;
-    --fs-lg: 28px;
-    --fs-xl: 32px;
+    --fs-md: 44px;
+    --fs-lg: 18px;
+    --fs-xl: 24px;
+    --fs-xxl: 16px;
+    --fs-2xl: 24px;
     /* colors */
     --bs-white: #fff;
     --bg-skin: #fff9e4;
