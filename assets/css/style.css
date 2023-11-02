@@ -46,6 +46,13 @@
     border: 1px solid #FAFAFA;
     padding: 16px 30px;
     background-color: transparent;
+    transition: 300ms all linear;
+}
+
+.login-btn:hover {
+    border-radius: 5px;
+    background: #80765D;
+    transition: 300ms all linear;
 }
 
 .primary-btn {
@@ -113,7 +120,7 @@
     transition: all 300ms linear;
 }
 
-.line::after {
+/* .line::after {
     content: '';
     position: absolute;
     top: 40%;
@@ -122,7 +129,7 @@
     height: 1px;
     background-color: var(--bs-black);
     opacity: 0.4;
-}
+} */
 
 .card-2-btn {
     padding: 16px 93px;
@@ -262,6 +269,10 @@
     transform: var(--bs-accordion-btn-icon-transform);
 }
 
+.accordion-button:not(.collapsed) {
+    color: black !important;
+}
+
 /* ==========max-width============ */
 
 .max-width-401 {
@@ -366,6 +377,30 @@
 .slider3 .slick-current,
 .slider3 .slick-center {
     transform: scale(1.1);
+
+}
+
+.slick-dots li {
+    margin: 0 5px;
+    padding: 0;
+    font-family: slick;
+    font-size: 16px;
+    width: 31px;
+    height: 11px;
+    content: '';
+    background-color: #D9D9D9;
+    border-radius: 34px;
+    text-align: center;
+}
+
+.slick-dots li button:before {
+    content: 'unset';
+    font-size: 0;
+}
+
+.slick-dots li.slick-active {
+    background-color: #3C3C3C;
+    width: 57px;
 }
 
 /* ----------------opcity------------------ */
@@ -532,6 +567,60 @@ ul {
     padding-left: 0;
 }
 
+.header-ellipse {
+    position: absolute;
+    top: 0;
+}
+
+.final-version {
+    position: absolute;
+    top: 7%;
+    left: 30%;
+
+}
+
+.final-version2 {
+    position: absolute;
+    top: 13%;
+    right: 15%;
+}
+
+.final-version3 {
+    position: absolute;
+    bottom: 13%;
+    left: 20%;
+}
+
+.final-version4 {
+    position: absolute;
+    bottom: 13%;
+    right: 21%;
+}
+
+.scribble-img {
+    position: absolute;
+    right: 7%;
+    bottom: 42%;
+}
+
+.sec-ellipse {
+    position: absolute;
+    left: 8%;
+    bottom: 14%;
+}
+
+.dots-ellipse {
+    position: absolute;
+    bottom: 7%;
+    left: 10%;
+}
+
+.big-triangle {
+    position: absolute;
+    bottom: -2px;
+    right: -7px;
+}
+
 @keyframes swing {
     0% {
         transform: scale(1);
@@ -590,6 +679,10 @@ ul {
     transition: all 300ms linear;
 }
 
+.z-index-4 {
+    z-index: 4;
+}
+
 /* =========nav bar========= */
 @media (max-width: 992px) {
     .mobile_view {
@@ -630,9 +723,6 @@ ul {
         transform: rotate(-50deg) translateY(-50%);
     }
 
-    .z-index-4 {
-        z-index: 4;
-    }
 
     .border1 {
         position: relative;
@@ -710,17 +800,18 @@ ul {
     .slider-card {
         border-radius: 15px;
         border: 1px solid #FFCF23;
-        padding: 54px 57px 53px 58px;
+        padding: 25px;
         border-radius: 15px;
         background: #FFFCF6;
         margin: 25px;
         max-width: 891px;
     }
 }
+
 @media (min-width:992px) {
     .game-img {
-            position: absolute;
-            bottom: -16%;
-            right: 10%;
-        }
+        position: absolute;
+        bottom: -16%;
+        right: 10%;
+    }
 }

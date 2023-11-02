@@ -9,8 +9,7 @@ setTimeout(() => {
     document.getElementById("preloder").classList.add("opacity-0");
     document.getElementById("preloder").classList.add("pointer_event_none");
     document.body.classList.remove("overflow-hidden")
-}, 2000);
-
+}, 10000);
 window.addEventListener('scroll', function () {
     let backtotop = document.getElementById("backtotop")
     if (window.scrollY > 300) {
